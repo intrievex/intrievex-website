@@ -1,0 +1,182 @@
+/* { margin: 0; padding: 0;}*/
+
+
+#demo {
+	 width: 225px; 
+	/* margin: 69px auto;*/
+	float:right;
+     margin-right:3px;
+	
+
+}
+	
+	/* 1 */
+	 
+	#demo div a.ReleaseNotes 
+	{
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_v90court.jpg);
+		background-position: top;
+		text-indent: -9999px;
+		z-index:999;
+	}
+		#demo div a.ReleaseNotes:hover, #demo div a.ReleaseNotes:focus {
+			background-position: bottom;
+		}
+	
+	/* 2 */
+	
+	#demo div a.COL_acct_Code {
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_colacctg.jpg);
+		background-position: top;
+		text-indent: -9999px;
+	}
+	#demo div a.COL_acct_Code:hover, #demo div a.COL_acct_Code:focus {
+			background-position: bottom;
+		}
+	
+#demo div a.IX_data 
+	{
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_courtonline.jpg);
+		background-position: top;
+		text-indent: -9999px;
+		z-index:999;
+	}
+		#demo div a.IX_data:hover, #demo div a.IX_data:focus {
+			background-position: bottom;
+		}
+	/* 4 */
+	#demo div a.COL_data {
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_overview.jpg);
+		background-position: top;
+		text-indent: -9999px;
+	}
+	#demo div a.COL_data:hover, #demo div a.COL_data:focus {
+			background-position: bottom;
+		}
+
+a { outline: none; margin-top:5px; }
+
+.courts
+{
+    margin-top:-600px;
+}
+.productsBtn
+{
+	margin-top:-1200px;
+}
+.product
+{
+    margin-top:-1400px;
+}
+#Prod {
+	 width: 225px; 
+	/* margin: 69px auto;*/
+	float:right;
+     margin-right:13px;
+	 margin-top: -1300px;
+}
+	/* 1 */
+	/* 
+	#Prod p a.ReleaseNotes 
+	{
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_v90court.jpg);
+		background-position: top;
+		text-indent: -9999px;
+		z-index:999;
+	}
+		#Prod p a.ReleaseNotes:hover, #Prod p a.ReleaseNotes:focus {
+			background-position: bottom;
+		}
+	*/
+	/* 2 */
+	/*
+	#Prod p a.COL_acct_Code {
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_colacctg.jpg);
+		background-position: top;
+		text-indent: -9999px;
+	}
+	#Prod p a.COL_acct_Code:hover, #Prod p a.COL_acct_Code:focus {
+			background-position: bottom;
+		}
+	*/
+	/* 3 */		
+	#Prod p a.IX_data {
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_courtonline.jpg);
+		background-position: top;
+		text-indent: -9999px;
+	}
+	
+	#Prod p a.IX_data:hover, #Prod p a.IX_data:focus {
+			background-position: bottom;
+		}
+		
+	/* 4 */
+	#Prod p a.COL_data {
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_courtonline.jpg);
+		background-position: top;
+		text-indent: -9999px;
+	}
+	#Prod p a.COL_data:hover, #Prod p a.COL_data:focus {
+			background-position: bottom;
+		}
+		
+		
+		
+#daily{
+
+	 width: 225px; 
+	/* margin: 69px auto;*/
+	float:right;
+     margin-right:13px;
+	 margin-top: -225px;
+}
+/* 3 */		
+	#daily p a.IX_data {
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_courtonline.jpg);
+		background-position: top;
+		text-indent: -9999px;
+	}
+	
+	#daily p a.IX_data:hover, #Prod p a.IX_data:focus {
+			background-position: bottom;
+		}
+		
+		
+#backfill{
+
+	 width: 225px; 
+	/* margin: 69px auto;*/
+	float:right;
+     margin-right:13px;
+	 margin-top: -200px;
+}
+/* 3 */		
+	#backfill p a.IX_data {
+		display: block;
+		width: 225px; height: 69px;
+		background-image: url(../images/btn_courtonline.jpg);
+		background-position: top;
+		text-indent: -9999px;
+	}
+	
+	#backfill p a.IX_data:hover, #backfill p a.IX_data:focus {
+			background-position: bottom;
+		}

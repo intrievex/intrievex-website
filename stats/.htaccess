@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "intrievex.com Statistics"
+AuthUserFile /var/chroot/home/content/89/7466989/html/stats/.statspwd
+Require valid-user
+DirectoryIndex index.html

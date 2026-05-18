@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* Fix problem with IE6 ad left margin */
+.header {
+	margin-left:42px;
+}
+
+.primary_nav {
+	margin-left:63px;
+}
+
+.content {
+	padding-left:50px;
+}
+
+.content .secondary_nav {
+	margin-left:42px;
+}
+
+.content .sidebar {
+	margin-left:42px;
+}
+
+/* alernate link arrow images */
+.content .secondary_nav ul li.selected {
+	background:#6190b1 url(../images/link_arrows_secondary_nav_ie6.png) no-repeat 181px 8px scroll;
+}
+
+a.cta_link {
+	background:transparent url(../images/link_arrows_ie6.png) no-repeat right -24px scroll;
+}
+
+.product_actions .product_download div.download_button a {
+	background:transparent url(../images/link_arrows_download_button_ie6.png) no-repeat 154px 6px scroll;
+}
+

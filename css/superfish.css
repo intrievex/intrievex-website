@@ -1,0 +1,187 @@
+
+/*** ESSENTIAL STYLES ***/
+@font-face {
+    font-family: 'TitilliumText22LRegular';
+    src: url('../fonts/TitilliumText22L003-webfont.eot');
+    src: url('../fonts/TitilliumText22L003-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TitilliumText22L003-webfont.woff') format('woff'),
+         url('../fonts/TitilliumText22L003-webfont.ttf') format('truetype'),
+         url('../fonts/TitilliumText22L003-webfont.svg#TitilliumText22LRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.sf-menu, .sf-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+	
+}
+.sf-menu {
+	line-height:	1.0;
+}
+.sf-menu ul {
+	position:		absolute;
+	top:			-999em;
+	width:			10em; /* left offset of submenus need to match (see below) */
+}
+.sf-menu ul li {
+	width:			100%;
+}
+.sf-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.sf-menu li {
+	float:			left;
+	position:		relative;
+}
+.sf-menu a {
+	display:		block;
+	position:		relative;
+}
+.sf-menu li:hover ul,
+.sf-menu li.sfHover ul {
+	left:			0;
+	top:			31px; /* match top ul list item height */
+	z-index:		99;
+}
+ul.sf-menu li:hover li ul,
+ul.sf-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li:hover ul,
+ul.sf-menu li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+ul.sf-menu li li:hover li ul,
+ul.sf-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.sf-menu li li li:hover ul,
+ul.sf-menu li li li.sfHover ul {
+	left:			10em; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:	5px;
+}
+.sf-menu a {
+	height: 20px;
+	padding: 6px 11px 0 11px;
+	text-decoration:none;
+	font-family: 'TitilliumText22LRegular';
+	font-size:13px;
+	text-shadow: -1px -1px #1c618b;
+	
+}
+.sf-menu a, .sf-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:			#fff;
+}
+
+.sf-menu a:hover  { 
+	color:			#b2eaff;
+}
+.sf-menu li {
+	/*background:		#000;*/
+}
+.sf-menu li li {
+}
+.sf-menu li li li {
+	background:		#f00;
+}
+.sf-menu .mm1 li:hover, .sf-menu .mm1 li.sfHover
+.sf-menu .mm1 a:focus, .sf-menu .mm1 a:hover, .sf-menu .mm1 a:active {
+	outline:		0;
+}
+
+.sf-menu .mm2 li:hover, .sf-menu .mm2 li.sfHover,
+.sf-menu .mm2 a:focus, .sf-menu .mm2 a:hover, .sf-menu .mm2 a:active {
+	outline:		0;
+	
+}
+
+.sf-menu .mm3 li:hover, .sf-menu .mm3 li.sfHover,
+.sf-menu .mm3 a:focus, .sf-menu .mm3 a:hover, .sf-menu .mm3 a:active {
+	outline:		0;
+}
+
+.sf-menu .mm4 li:hover, .sf-menu .mm4 li.sfHover,
+.sf-menu .mm4 a:focus, .sf-menu .mm4 a:hover, .sf-menu .mm4 a:active {
+	outline:		0;
+}
+
+.sf-menu .mm5 li:hover, .sf-menu .mm5 li.sfHover,
+.sf-menu .mm5 a:focus, .sf-menu .mm5 a:hover, .sf-menu .mm5 a:active {
+	outline:		0;
+}
+
+.mm1:hover{
+	outline:		0;
+	background:url(../images/mm1.png) no-repeat;
+}
+
+.mm2:hover{
+	outline:		0;
+	background:url(../images/mm2.png) no-repeat;
+}
+.mm3:hover{
+	outline:		0;
+	background:url(../images/mm3.png) no-repeat;
+}
+.mm4:hover{
+	outline:		0;
+	background:url(../images/mm4.png) no-repeat;
+}
+
+.mm5:hover{
+	outline:		0;
+	background:url(../images/mm5.png) no-repeat;
+}
+
+.current .mm1{
+	outline:		0;
+	background:url(../images/mm1.png) no-repeat;
+	}
+	
+.current .mm2{
+	outline:		0;
+	background:url(../images/mm2.png) no-repeat;
+	}
+
+.current .mm3{
+	outline:		0;
+	background:url(../images/mm3.png) no-repeat;
+	}
+
+.current .mm4{
+	outline:		0;
+	background:url(../images/mm4.png) no-repeat;
+	}
+	
+.current .mm5{
+	outline:		0;
+	background:url(../images/mm5.png) no-repeat;
+	}
+
+/*** Main Menu ***/
+
+
+/*** shadows for all but IE6 ***/
+.sf-shadow ul {
+	/*background:	url('../images/shadow.png') no-repeat bottom right;*/
+	background:		#277fac;
+	width:160px;
+	/*padding: 0 8px 9px 0;
+	-moz-border-radius-bottomleft: 17px;
+	-moz-border-radius-topright: 17px;
+	-webkit-border-top-right-radius: 17px;
+	-webkit-border-bottom-left-radius: 17px;*/
+}
+.sf-shadow ul.sf-shadow-off {
+	background: transparent;
+}

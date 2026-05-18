@@ -1,0 +1,710 @@
+@charset "UTF-8";
+
+@import "reset.css";
+
+a:focus {outline:none;}
+a::-moz-focus-inner {border:0;}
+
+
+
+/* @font-face definitions */
+@font-face {
+    font-family: 'TitilliumText22LLight';
+    src: url('fonts/TitilliumText22L002-webfont.eot?') format('eot'),
+         url('fonts/TitilliumText22L002-webfont.woff') format('woff'),
+         url('fonts/TitilliumText22L002-webfont.ttf') format('truetype'),
+         url('fonts/TitilliumText22L002-webfont.svg#webfontWLF9Q09S') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TitilliumText22LMedium';
+    src: url('fonts/TitilliumText22L004-webfont.eot?') format('eot'),
+         url('fonts/TitilliumText22L004-webfont.woff') format('woff'),
+         url('fonts/TitilliumText22L004-webfont.ttf') format('truetype'),
+         url('fonts/TitilliumText22L004-webfont.svg#webfontd3ljp2K0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'TitilliumText22LBold';
+    src: url('fonts/TitilliumText22L005-webfont.eot?') format('eot'),
+         url('fonts/TitilliumText22L005-webfont.woff') format('woff'),
+         url('fonts/TitilliumText22L005-webfont.ttf') format('truetype'),
+         url('fonts/TitilliumText22L005-webfont.svg#webfontZL0yA7s8') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* common */
+html {
+	min-height: 100%;
+	height: auto;
+	background:#fff url(../images/html_background.png) repeat-y center bottom scroll;
+}
+
+body {
+	background:transparent url(../images/body_background.jpg) no-repeat center 0 scroll;
+	font: 75%/1.5em Arial, Helvetica, sans-serif;
+	color: #666666;
+	behavior: url("css/csshover3.htc");
+}
+
+h1, 	h3, h4 {
+	font-family:'TitilliumText22LLight', Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+
+h2 {
+	font-family:'TitilliumText22LMedium', Arial, Helvetica, sans-serif;
+	font-size:2em;
+	color:#115788;
+	margin:0 0 16px 0;
+}
+
+h3 {
+	font-size:1.5em;
+	color:#115788;
+}
+
+h4 {
+	font-size:1.25em;
+	color:#115788;
+}
+
+h5 {
+	font-family:'TitilliumText22LMedium', Arial, Helvetica, sans-serif;
+	font-size:1em;
+	color:#115788;
+}
+
+h6 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:1em;
+	color:#115788;
+	font-weight:bold;
+}
+
+a {
+	text-decoration:underline;
+	color:#115788;
+	
+}
+a::-moz-focus-inner { 
+  border: 0;
+  padding: 0;
+}
+
+a:hover, a:active, a:visited  {
+	color:#8e9bba;
+	
+}
+
+img {
+	border:none;
+}
+
+div.hr {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 20px auto;
+	width: 100%;
+	height:2px;
+	background:transparent url(../images/hr_background.png) repeat-x 0 0 scroll;
+	clear: both;
+	border: none;
+	font-size: 1px;
+	line-height: 0;
+	overflow: visible;
+}
+
+.wrapper {
+	margin:0 auto;
+	width:954px;
+}
+
+a.cta_link {
+	display:inline-block;
+	background:transparent url(../images/link_arrows.png) no-repeat right -24px scroll;
+	padding-right:20px;
+	color:#115788;
+}
+
+a.cta_link:hover {
+	color:#8e9bba;
+	background-position:right -51px;
+}
+
+.note {
+	font-style:italic;
+}
+
+/* lsits reset */
+
+ul {
+	list-style-type:disc;
+	margin: 1em 0 0 1.5em;
+}
+
+ul li {
+	margin: 1em 0;
+}
+
+ul li ul {
+	list-style-type:circle;
+	margin: 1em 0 0 1.5em;
+}
+
+ul li ul li ul {
+	list-style-type:disc;
+	margin: 1em 0 0 1.5em;
+}
+
+ol {
+	list-style-type:decimal;
+	margin: 1em 0 0 1.5em;
+}
+
+ol li {
+	margin: 1em 0;
+}
+
+ol li ol {
+	list-style-type:lower-alpha;
+	margin: 1em 0 0 1.5em;
+}
+
+ol li ol li ol {
+	list-style-type:lower-roman;
+	margin: 1em 0 0 1.5em;
+}
+
+
+/* header */
+.header {
+	width:954px;
+	height:137px;
+	position:relative;
+}
+
+.header h1 a, p.logo a {
+	display:block;
+	position:relative;
+	width:276px;
+	height:52px;
+	top:30px;
+	left:31px;
+	text-indent:-9999px;
+	outline:none;
+	background:transparent url(../images/intrievex_logo.png) no-repeat 0 0 scroll;
+}
+
+.header .tagline {
+	display:block;
+	position:absolute;
+	top:72px;
+	right:20px;
+	font-family:'TitilliumText22LBold', Arial, Helvetica, sans-serif;
+	font-size:1.25em;
+	color:#115788;
+}
+
+.util_nav {
+	display:block;
+	float:right;	
+	position:absolute;
+	height:32px;
+	top:0;
+	right:20px;
+	background:transparent url(../images/ulility_nav_background.png) no-repeat 0 0 scroll;
+	padding:0 0 0 7px;
+}
+
+.util_nav ul {
+	list-style-type:none;
+	margin:0;
+	float:left;
+	padding:0 7px 0 0;
+	height:32px;
+	background:transparent url(../images/ulility_nav_background.png) no-repeat right -32px scroll;
+}
+
+.util_nav ul li {
+	display:block;
+	float:left;
+	border-left:1px solid #fff;
+	margin:7px 0 0 0;
+	}
+	
+.util_nav ul li:first-child {
+	border-left:none;
+}
+
+.util_nav ul li a, .util_nav ul li a:visited {
+	color:#fff;
+	font-family:'TitilliumText22LBold', Arial,  Helvetica, sans-serif;	
+	font-size:1em;
+	text-decoration:none;
+	padding:0 8px;
+	outline:none;
+}
+
+.util_nav ul li a:hover {
+	color:#9fbbcf;
+}
+
+/* primary navigation */
+.primary_nav {
+	margin:0 21px 0 21px;
+	height:50px;	
+	overflow:hidden;
+	width:954px;
+}
+
+.primary_nav ul {
+	list-style-type:none;
+	height:50px;
+	width:954px;
+	margin:0;
+	white-space:nowrap;
+}
+
+.primary_nav ul li {
+	display:block;
+	margin:0;
+	float:left;
+}
+	
+.primary_nav ul li a {
+    background:transparent url("../images/primary_nav_background.png") repeat-x scroll 0 50px;
+    color: #666666;
+    display: block;
+		float:left;
+    font-family: 'TitilliumText22LBold',Arial,Helvetica,sans-serif;
+    font-size: 1.25em;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 50px;
+    text-decoration: none;
+		outline:none;
+}
+
+.primary_nav ul li a:hover {
+	background-position:0 0;
+}
+
+.primary_nav ul li.selected a {
+	background-position:0 -50px;
+}
+
+.primary_nav ul li.last a {
+	padding-right:50px;
+}
+
+/* secondary navigation */
+.content .secondary_nav {
+	width:207px;
+	margin:0 21px 0 0px;
+	background:#115788 url(../images/secondary_nav_background.png) no-repeat 0 0 scroll;
+	position:absolute;
+	left:0;
+	display:inline;
+}
+
+.content .secondary_nav ul {
+	background:transparent url(../images/secondary_nav_background.png) no-repeat -207px bottom scroll;
+	padding:10px 0;
+	margin:0;
+	list-style-type:none;
+}
+
+.content .secondary_nav ul li {
+	padding:7px 0;
+	margin:0;
+}
+
+.content .secondary_nav ul li.selected {
+	background:#6190b1 url(../images/link_arrows.png) no-repeat 181px 8px scroll;
+	color:#fff;
+}
+
+.content .secondary_nav ul li a {
+	display:block;
+	width:207px;
+	font-family: 'TitilliumText22LBold',Arial,Helvetica,sans-serif;
+	font-size:1.25em;
+	color:#cccccc;
+	text-indent:20px;
+	text-decoration:none;
+	outline:none;
+}
+
+.content .secondary_nav ul li a:hover, .content .secondary_nav ul li.selected a {
+	color:#fff;
+}
+
+
+/* content area */	
+.content {
+	margin:16px 0;
+	clear:both;
+	position:relative;
+	/*width:894px;*/
+       width:700px;
+}
+.homeContent
+{
+    margin:16px 0;
+	clear:both;
+	position:relative;
+	width:894px;
+}
+
+/* home content */
+
+.home .content {
+	min-height:445px;
+	background:transparent url(../images/home_content_background.jpg) no-repeat right top scroll;
+	margin:0 30px;
+}
+
+.home .content .main p {
+	font-size:1.167em;
+}
+
+.home .content .main {
+	width:480px;
+	
+}
+.home .homeContent {
+	min-height:445px;
+	background:transparent url(../images/home_content_background.jpg) no-repeat right top scroll;
+	margin:0 30px;
+}
+
+.home .homeContent .main p {
+	font-size:1.167em;
+}
+
+.home .homeContent .main {
+	width:480px;
+	
+}
+.product_actions {
+	width:486px;
+	margin:0 0 0 -3px;
+}
+
+.product_actions .product_download {
+	width:237px;
+	background:transparent url(../images/home_download_container.png) no-repeat -237px bottom scroll;
+	margin:0 12px 0 0;
+	min-height:137px;
+  height:auto !important;
+  height:137px;
+
+	position:relative;
+	float:left;
+}
+
+.product_actions .product_download h3 {
+	font-family:'TitilliumText22LMedium', Arial, Helvetica, sans-serif;
+	padding:17px 18px 0;
+	font-size:1.833em;
+	color:#115788;
+	height:20px;
+	background:transparent url(../images/home_download_container.png) no-repeat 0 0 scroll;
+}
+
+.home .product_actions .product_download p {
+	font-size:1em;
+	line-height:1.25em;
+	margin:0 18px;
+}
+
+.product_actions .product_download div.download_button {
+	display:block;
+	position:absolute;
+	bottom:23px;
+	left:16px;
+	text-align:center;
+	background:transparent url(../images/download_button_background.png) repeat-x 0 0 scroll;
+	border:1px solid #000;
+}
+
+.product_actions .product_download div.download_button:hover {
+	background-position:0 -28px;	
+}
+
+.product_actions .product_download div.download_button:active {
+	background-position:0 0;
+}
+
+.product_actions .product_download div.download_button a {
+	font-family:'TitilliumText22LMedium', Arial, Helvetica, sans-serif;
+	font-size:1.333em;
+	color:#fff;
+	height:28px;
+	width:203px;
+	display:block;
+	line-height:29px;
+	text-decoration:none;
+	text-indent:-10px;
+	background:transparent url(../images/link_arrows.png) no-repeat 154px 6px scroll;
+	outline:none;
+}
+
+.product_actions div.button {
+	float:left;
+	background:transparent url(../images/product_action_button.png) no-repeat 0 0 scroll;
+}
+
+.product_actions div.button:hover {
+	background-position:0 -68px;
+}
+
+.product_actions div.button:active {
+	background-position:0 0;
+}
+
+.product_actions div.button a {
+	font-family:'TitilliumText22LMedium', Arial, Helvetica, sans-serif;
+	font-size:1.75em;
+	display:block;
+	width:237px;
+	height:68px;
+	display:block;
+	color:#115788;
+	line-height:63px;
+	text-decoration:none;
+	text-indent:20px;
+	outline:none;
+}
+
+/* sub content */
+
+.sub .content .main {
+	position:relative;
+	left:223px;
+	width:477px;
+}
+
+.sub .content .main h1 {
+	display:block;
+	width:224px;
+	height:100px;
+	font-size:2.667em;
+	color:#fff;
+	line-height:30px;
+	padding:10px 243px 10px 10px;
+	margin:0 0 20px 0;
+}
+
+.sub .content .main h1.productsandservices {
+	background:transparent url(../images/masthead_background_productsservices.jpg) no-repeat 0 0 scroll;
+}
+
+.sub .content .main h1.customerexperience {
+	background:transparent url(../images/masthead_background_customerexperience.jpg) no-repeat 0 0 scroll;
+}
+
+.sub .content .main h1.support {
+	background:transparent url(../images/masthead_background_support.jpg) no-repeat 0 0 scroll;
+}
+
+.sub .content .main h1.aboutus {
+	background:transparent url(../images/masthead_background_aboutus.jpg) no-repeat 0 0 scroll;
+}
+
+.sub .content .main h1.news {
+	background:transparent url(../images/masthead_background_news.jpg) no-repeat 0 0 scroll;
+}
+
+.sub .content .main p {
+	margin:10px 0;
+}
+
+.sub .content .main h3 {
+	font-size:1.833em;
+	color:#115788;
+	margin:25px 0 5px;
+}
+
+.sub .content .main dl.faq dt {
+	font-size:1em;
+	font-weight:bold;
+	color:#115788;
+	margin:15px 0 0 18px;
+	text-indent:-18px;
+}
+
+.sub .content .main dl.faq dd  {
+	margin-left:18px;
+	text-indent:-18px;
+}
+
+.sub .content .main dl.faq dd .answer {
+	font-weight:bold;
+}
+
+.sub .content .main dl.principles dt {
+	font-size:1em;
+	font-weight:bold;
+	color:#115788;
+	margin:15px 0 0 0;
+}
+
+.sub .content .main dl.principles dd  {
+}
+
+/* sidebar */
+.sub .content .sidebar {
+	position:absolute;
+	top:138px;
+	left:720px;
+	width:234px;
+	min-height:75px;
+	background:transparent url(../images/sidebar_background.png) repeat-y -234px bottom scroll;
+	padding-bottom:10px;
+}
+
+.sub .content .sidebar h3 {
+	font-size:1.833em;
+	color:#115788;
+	background:transparent url(../images/sidebar_background.png) repeat-y 0 0 scroll;
+	width:214px;
+	height:22px;
+	padding:10px 10px 0 10px;
+}
+
+.sub .content .sidebar ul {
+	margin:0 10px;
+	list-style-type:none;
+}
+
+.sub .content .sidebar li {
+	margin:5px 0;
+}
+
+/* moreInfo*/
+.moreInfo{
+display:block;
+position:absolute;
+	top:138px;
+	left:720px;
+	height: 85px;
+        width: 200px;
+	
+padding-bottom:10px;
+	
+}
+
+
+.pdf_logo{
+	display:block;
+	float:right;
+	height:32px;
+	margin:5px 40px 0px 0px;
+        
+	background:transparent url(../images/pdf_logo.jpg) no-repeat 0 0 scroll;
+	width:32px;
+}
+div.content.legal {
+	padding-top:20px;
+}
+
+img.bio {
+	border: 1px solid #115788;
+	float: left;
+	height: 140px;
+	width: 150px;
+	margin: 15px 15px 15px 0;
+}
+
+.main .confirmation {
+	background-color:#9ebed2;
+	padding:15px 10px 0 10px;
+	border:solid 1px #115788;
+	margin:0 0 15px 0;
+}
+
+.sub .content .main .confirmation h3 {
+	margin:0;
+}
+
+/* footer */
+.footer {
+	margin:50px 20px 20px 32px;
+}
+
+.footer p.legal {
+	float:right;
+	font-size:0.917em;
+	color:#333;
+}
+
+.footer p.legal a {
+	color:#333;
+}
+
+.footer p.legal a:hover {
+	color:#115788;
+}
+
+/* salesforce form */
+.sfform {
+	margin:10px 0;
+}
+
+.sfform input, .sfform textarea {
+	margin:5px 0 10px;
+	width:200px;
+}
+
+.sfform input.submit {
+	margin:5px 0 10px;
+	width:auto;
+}
+
+
+/* clearfix */
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+ 
+.clearfix {
+	display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+	display: block;
+}
+ 
+* html .clearfix {
+	height: 1%;
+}
+.LinkedIn
+{
+     float:right;
+     margin-right: 325px;
+    margin-top: -5px; 
+}
+
+.LinkedInInc
+{
+ float:right;
+ 
+      margin-right: 265px;
+    margin-top: -45px; 
+}
